@@ -1,5 +1,7 @@
 package tech.buildrun.orderms.factory;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import tech.buildrun.orderms.entity.OrderEntity;
 import tech.buildrun.orderms.entity.OrderItemEntity;
 
@@ -17,5 +19,9 @@ public class OrderEntityFactory {
     entity.setItems(List.of(items));
 
     return entity;
+  }
+
+  public static Page<OrderEntity> buildWithPage() {
+    return new PageImpl<>(List.of(build()));
   }
 }
