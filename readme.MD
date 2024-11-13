@@ -42,3 +42,5 @@ Valor total do pedido, quantidade de pedidos por cliente lista de pedidos realiz
        ]
    }
 ```
+
+### Adcionado testes ao projeto 
